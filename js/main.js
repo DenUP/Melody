@@ -25,9 +25,9 @@ if (currentFloor <18) {
   });
 
   /* отслеживаем клик по кнопке вниз */
-  if (currentFloor >2) 
-  /* проверяем значение у этажа, оно не должно быть меньше 18  */
   counterDown.on("click", function() {
+    /* проверяем значение у этажа, оно не должно быть меньше 18  */
+    if (currentFloor >2) 
  {  currentFloor--; /* Отнимаем один этаж */
   
     usCurrentFloor = currentFloor.toLocaleString('en-US', {minimumIntegerDigits: 2, 
